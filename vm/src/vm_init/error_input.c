@@ -38,7 +38,7 @@ int error_input(vm_t *data, int ac, char **av)
         return ERROR;
     }
     result = result - flag_nbr - cor_nbr;
-    free_tab(temp);
+    free(temp);
     if (result != 0) {
         return ERROR;
     }

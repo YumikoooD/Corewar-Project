@@ -14,7 +14,7 @@
 void show_win(vm_t *data)
 {
     if (data->fighter_alive == NULL) {
-        my_printf("No winner\n");
+        my_printf("Equality\n");
         return;
     }
     my_printf("The player %d", data->fighter_alive->fighter_number);

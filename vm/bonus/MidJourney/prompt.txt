@@ -1,3 +1,0 @@
-sunny beach in Florida, --v 5 --ar 2:1
-teddy bear illustration, --v 5 --ar 2:3
-ship illustration, --v 5 --ar 2:3

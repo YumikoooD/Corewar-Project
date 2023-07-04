@@ -12,7 +12,6 @@ client = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 directory = os.getcwd()
 print(directory)
 
-# ouvrir l'image, obtenir sa taille, calculer les points médians et diviser l'image en parties.#
 def split_image(image_file):
     with Image.open(image_file) as im:
         width, height = im.size
@@ -24,9 +23,6 @@ def split_image(image_file):
         bottom_right = im.crop((mid_x, mid_y, width, height))
         return top_left, top_right, bottom_left, bottom_right
 
-#télécharger une image à partir d'une URL donnée. 
-#Elle utilise la bibliothèque requests pour effectuer une requête HTTP, 
-#vérifie le statut de la réponse et sauvegarde l'image localement.#
 async def download_image(url, filename):
     response = requests.get(url)
     if response.status_code == 200:
@@ -59,10 +55,6 @@ async def download_image(url, filename):
 async def on_ready():
     print("Bot connected")
 
-
-#L'événement on_message est défini pour être déclenché à chaque fois qu'un message est envoyé sur Discord. 
-#Dans cet exemple, il vérifie si le message contient des pièces jointes d'image. 
-#Si c'est le cas, il utilise la fonction download_image pour télécharger l'image.
 @client.event
 async def on_message(message):
     print(message.content)

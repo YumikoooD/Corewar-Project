@@ -15,7 +15,7 @@ void find_dead_fighters(vm_t *data)
 {
     for (int i = 0; data->fighter[i] != NULL; i++) {
         if (data->actual_cycle - data->fighter[i]->last_live_call
-                > data->dump_nbr_cycle) {
+                > data->max_cycle) {
             data->fighter[i]->alive = 0;
             data->fighter_nbr--;
         }

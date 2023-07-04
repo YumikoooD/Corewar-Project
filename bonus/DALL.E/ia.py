@@ -5,7 +5,7 @@ import json
 import base64
 from PIL import Image
 
-openia_key = os.getenv("OPENAI_KEY")
+openia_key = "sk-" + os.getenv("OPENAI_KEY")
 openai.api_key = openia_key
 
 with open("champion.txt", "r") as file:

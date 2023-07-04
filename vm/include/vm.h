@@ -39,11 +39,10 @@ typedef struct vm_s {
     int dump_nbr_cycle;
     int prog_number;
     int fighter_address;
-
     fighter_t **fighter;
     int *arena;
     int fighter_nbr;
-
+    int max_cycle;
     int actual_cycle;
     int live_call;
     fighter_t *fighter_alive;

@@ -21,7 +21,7 @@ int cmd_live(vm_t *data, fighter_t *fighter)
             data->fighter[i]->last_live_call = data->actual_cycle;
     data->live_call += 1;
     if (data->live_call >= NBR_LIVE) {
-        data->dump_nbr_cycle -= CYCLE_DELTA;
+        data->max_cycle -= CYCLE_DELTA;
         data->live_call = 0;
     }
     if (arg == fighter->fighter_number) {
