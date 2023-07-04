@@ -1,6 +1,6 @@
 # Corewar
 
-Corewar is a project inspired by the game of the same name, where champions battle in a virtual arena. Each champion is written in Corewar's specific assembly language and is executed by a virtual machine called the "corewar".
+Corewar is a project inspired by the game of the same name, where champions battle in a virtual arena. Each champion is written in Corewar's specific assembly language and is executed by a virtual machine called the "corewar". The project was completed at 4 in 1 month.
 
 ## Features
 
