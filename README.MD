@@ -2,7 +2,7 @@
 
 WarMachine is a project inspired by the game "Corewar", where champions battle in a virtual arena. Each champion is written in assembly language and is executed by a virtual machine called the "corewar". The project was completed at 4 in 1 month.
 
-![CoreWar](https://gifs.com/gif/war-machine-rise-089kqN.gif)
+![CoreWar](https://j.gifs.com/089kqN.gif)
 
 ## Features
 
